@@ -1,0 +1,41 @@
+//elegxoume thn shmasiologikh analysh tou programmatos
+program x
+    declare a,b,d;
+    function f1()
+        declare a;
+        function f2(in x, inout y, inandout z)
+            declare a;
+
+            return x;
+            a:=b+2+b + f2(in x,  inout x, in z);
+            input z;
+        endfunction
+        return a;
+    endfunction
+
+    function f3()
+        return a;
+    endfunction
+
+    loop
+
+
+    a:=f1();
+    a:=30;
+    b:=10;
+    while(b>0)
+        loop
+            print b;
+            if( a> b) then
+                exit;
+            endif;
+            b:=b-1;
+            if(a>10) then
+                exit;
+            endif
+        endloop;
+        b:=b-1
+    endwhile
+    endloop;
+
+endprogram

@@ -1,0 +1,50 @@
+/*einai gia na
+tsekaroume to c arxeio
+*/
+program test
+declare x,y;
+declare a,b,c;
+
+    input a;
+    input b;
+    if(a>b) then
+        while (a>b)
+            print a;
+            a:=a-1;
+            if( a + 3 <b or b >10) then
+                dowhile
+                    a:= a/3;
+                    print a
+                enddowhile(a>b)
+            else
+                a:=b;
+                print a
+            endif
+        endwhile
+    else
+        forcase
+            when (a<b) : print a+b;
+            when (a=b) : print a*b;
+            default :print a-b; enddefault
+        endforcase
+    endif;
+    a:=30;
+    b:=20;
+    loop
+        a:=a-1;
+        if(a=b) then exit endif;
+        print a;
+    endloop;
+
+    input a;
+    input b;
+
+    incase
+        when(a>b) : print 4;a:=b;
+        when(a<b) : print 5;a:=b;
+        when(a<>b) : print 6;a:=b;
+    endincase;
+    c:=1
+
+
+endprogram
